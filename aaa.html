@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Emad Hamdy - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="aa.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-shapes"></i></span>
+            AHMED EMAD <span class="sub-logo">COMPUTER SCIENCE STUDENT</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#" class="nav-item active">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero reveal">
+        <div class="hero-content">
+            <p class="greeting">Hello, <span class="accent-text">I'm</span></p>
+            <h1 class="main-title">AHMED EMAD HAMDY</h1>
+            <h3 class="sub-title">I'm a <span id="typing" class="accent-text"></span><span class="cursor">|</span></h3>
+            <p class="description">
+                I am a Computer Science student at Menoufia National University, passionate about technology, software development, and building modern digital experiences.
+            </p>
+            <a href="#contact" class="cta-btn">Let's start chat</a>
+
+            <div class="contact-grid">
+                <a href="https://github.com/ahmed-emad" target="_blank" class="info-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>github.com/ahmed-emad</span>
+                </a>
+                <a href="tel:01222279333" class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>01222279333</span>
+                </a>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Menoufia, Egypt</span>
+                </div>
+                <a href="https://facebook.com/ahmed.emad.hamdy.122874" target="_blank" class="info-item">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>facebook.com/ahmed.emad.hamdy.122874</span>
+                </a>
+                <a href="mailto:ajsahmee@gmail.com" class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>ajsahmee@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/ahmed-3mad-298037393" target="_blank" class="info-item">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span>linkedin.com/in/ahmed-3mad-298037393</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <div class="hexagon-border">
+                <div class="hexagon">
+                    <img src="a.jpeg" alt="Ahmed Emad">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section reveal">
+        <div class="about-text">
+            <h2>Who <span class="accent-text">I'm</span></h2>
+            <h3>Computer Science Student</h3>
+            <p class="university">at <span class="accent-text">MENOUFIA NATIONAL UNIVERSITY</span></p>
+            <p>Dedicated to learning and exploring the fields of computing, software engineering, and problem solving.</p>
+        </div>
+    </section>
+
+    <section class="projects-section reveal">
+        <h2 class="section-title">Projects <span class="accent-text">I have done</span></h2>
+        <p class="projects-subtitle">A showcase of some of my previous work and academic projects.</p>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        </div>
+
+        <div class="projects-grid">
+            <div class="project-card tilt" data-category="web">
+                <div class="project-img-wrapper">
+                    <img src="Screenshot 2026-07-16 203906.png" alt="Project 1">
+                </div>
+            </div>
+
+            <div class="project-card tilt" data-category="design">
+                <div class="project-img-wrapper">
+                    <img src="Screenshot 2026-07-16 203939.png" alt="Project 2">
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section reveal">
+        <h2 class="section-title">Get In <span class="accent-text">Touch</span></h2>
+        <p class="projects-subtitle">Feel free to drop me a message, I will get back to you as soon as possible!</p>
+        
+        <form class="contact-form" action="https://formspree.io/f/mojgeqbr" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="cta-btn form-submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="ss.js"></script>
+</body>
+</html>
