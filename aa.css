@@ -20,7 +20,7 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-white);
     line-height: 1.6;
-    padding: 0 8%;
+    padding: 0 5%;
     overflow-x: hidden;
 }
 
@@ -248,7 +248,7 @@ a.info-item:hover {
     box-shadow: 0 5px 15px rgba(13, 242, 201, 0.2);
 }
 
-/* ⚡ قسم المشاريع والشاشات المتناسقة ⚡ */
+/* ⚡ قسم المشاريع - حلاً للأبعاد وتثبيت شكل الكروت ⚡ */
 .projects-section {
     padding: 80px 0;
     border-top: 1px solid #1c2630;
@@ -295,7 +295,7 @@ a.info-item:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* تثبيت 3 أعمدة بالضبط زي ما تحب */
     gap: 25px;
     padding: 10px 0;
 }
@@ -315,18 +315,22 @@ a.info-item:hover {
     display: none;
 }
 
+/* ⚡ تظبيط الصورة للحفاظ على أبعادها دون أي تشويه أو تمطيط ⚡ */
 .project-img-wrapper {
     width: 100%;
-    height: 200px;
+    background: #0a0e11;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-img-wrapper img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    transition: transform 0.5s ease;
+    height: auto;
+    display: block;
+    object-fit: contain; /* إظهار الصورة بالكامل دون قص */
+    transition: transform 0.4s ease;
 }
 
 .project-info {
@@ -375,7 +379,7 @@ a.info-item:hover {
 }
 
 .project-card:hover .project-img-wrapper img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .contact-section {
@@ -426,6 +430,9 @@ a.info-item:hover {
 }
 
 @media (max-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -440,6 +447,9 @@ a.info-item:hover {
 }
 
 @media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
     .contact-grid {
         grid-template-columns: 1fr;
     }
