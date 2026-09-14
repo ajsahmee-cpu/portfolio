@@ -16,8 +16,9 @@
         </div>
         <nav class="nav-links">
             <a href="#" class="nav-item active">Home</a>
-            <a href="#" class="nav-item">About</a>
-            <a href="#" class="nav-item">Contact</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">Contact</a>
         </nav>
     </header>
 
@@ -27,7 +28,7 @@
             <h1 class="main-title">AHMED EMAD HAMDY</h1>
             <h3 class="sub-title">I'm a <span id="typing" class="accent-text"></span><span class="cursor">|</span></h3>
             <p class="description">
-                I am a Computer Science student at Menoufia National University, passionate about technology, software development, and building modern digital experiences.
+                I am a Computer Science student at Menoufia National University, passionate about software engineering, Artificial Intelligence, and building modern web applications.
             </p>
             <a href="#contact" class="cta-btn">Let's start chat</a>
 
@@ -62,23 +63,31 @@
         <div class="hero-image-container">
             <div class="hexagon-border">
                 <div class="hexagon">
-                    <!-- الصورة الشخصية محتفظة بـ a.jpeg زي ما هي بدون تغيير -->
                     <img src="a.jpeg" alt="Ahmed Emad">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-section reveal">
-        <div class="about-text">
-            <h2>Who <span class="accent-text">I'm</span></h2>
-            <h3>Computer Science Student</h3>
-            <p class="university">at <span class="accent-text">MENOUFIA NATIONAL UNIVERSITY</span></p>
-            <p>Dedicated to learning and exploring the fields of computing, software engineering, and problem solving.</p>
+    <!-- قسم المهارات والتكنولوجيا (Skills) -->
+    <section id="skills" class="skills-section reveal">
+        <h2 class="section-title">Technical <span class="accent-text">Skills</span></h2>
+        <p class="projects-subtitle">Technologies and programming languages I work with.</p>
+        
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+            <div class="skill-card"><i class="fa-solid fa-code"></i><span>C++ / OOP</span></div>
+            <div class="skill-card"><i class="fa-solid fa-brain"></i><span>RAG / LLMs</span></div>
+            <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
         </div>
     </section>
 
-    <section class="projects-section reveal">
+    <!-- قسم المشاريع -->
+    <section id="projects" class="projects-section reveal">
         <h2 class="section-title">Projects <span class="accent-text">I have done</span></h2>
         <p class="projects-subtitle">A showcase of some of my previous work and academic projects.</p>
         
@@ -90,35 +99,51 @@
         </div>
 
         <div class="projects-grid">
-            <!-- مشروع Wound Guard AI الجديد -->
+            <!-- مشروع Wound Guard AI -->
             <div class="project-card tilt" data-category="ai">
                 <div class="project-img-wrapper">
                     <img src="Screenshot 2026-08-25 192349.png" alt="Wound Guard AI">
                 </div>
-                <div class="project-info" style="padding: 15px;">
-                    <h3 style="margin-bottom: 8px;">🩹 Wound Guard AI</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 12px;">
-                        Advanced Medical Emergency Assistant using RAG Pipeline to deliver precise first aid & wound care answers.
-                    </p>
-                    <div class="tech-tags" style="display: flex; gap: 8px; flex-wrap: wrap;">
-                        <span class="accent-text" style="font-size: 0.8rem; border: 1px solid; padding: 2px 8px; border-radius: 4px;">Python</span>
-                        <span class="accent-text" style="font-size: 0.8rem; border: 1px solid; padding: 2px 8px; border-radius: 4px;">RAG Pipeline</span>
-                        <span class="accent-text" style="font-size: 0.8rem; border: 1px solid; padding: 2px 8px; border-radius: 4px;">JavaScript</span>
+                <div class="project-info">
+                    <h3>🩹 Wound Guard AI</h3>
+                    <p>Advanced Medical Emergency Assistant using RAG Pipeline to deliver precise first aid & wound care answers.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>RAG Pipeline</span>
+                        <span>JavaScript</span>
                     </div>
                 </div>
             </div>
 
-            <!-- مشروع 1 القديم -->
+            <!-- مشروع 2: Modern Web App -->
             <div class="project-card tilt" data-category="web">
                 <div class="project-img-wrapper">
-                    <img src="Screenshot 2026-07-16 203906.png" alt="Project 1">
+                    <img src="Screenshot 2026-07-16 203906.png" alt="Modern Web Interface">
+                </div>
+                <div class="project-info">
+                    <h3>💻 Modern UI Experience</h3>
+                    <p>Cutting-edge glassmorphism web interface built with clean responsive layout and smooth interactive UI elements.</p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- مشروع 2 القديم -->
+            <!-- مشروع 3: Personal Profile Dashboard -->
             <div class="project-card tilt" data-category="design">
                 <div class="project-img-wrapper">
-                    <img src="Screenshot 2026-07-16 203939.png" alt="Project 2">
+                    <img src="Screenshot 2026-07-16 203939.png" alt="Personal Profile">
+                </div>
+                <div class="project-info">
+                    <h3>👤 User Profile Dashboard</h3>
+                    <p>Interactive web application showcasing personal dashboard layout, user interests, and dynamic status components.</p>
+                    <div class="tech-tags">
+                        <span>Web Design</span>
+                        <span>UI/UX</span>
+                        <span>JavaScript</span>
+                    </div>
                 </div>
             </div>
 
