@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+/* ⚡ إعدادات التنقل العام وتصحيح التمرير ⚡ */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px; /* بيمنع الـ Navbar الثابت إنه يغطي على عناوين الأقسام */
+}
+
 :root {
     --bg-dark: #0d1216;
     --bg-card: #151d24;
@@ -13,7 +22,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -248,7 +256,7 @@ a.info-item:hover {
     box-shadow: 0 5px 15px rgba(13, 242, 201, 0.2);
 }
 
-/* ⚡ قسم المشاريع - حلاً للأبعاد وتثبيت شكل الكروت ⚡ */
+/* ⚡ قسم المشاريع ⚡ */
 .projects-section {
     padding: 80px 0;
     border-top: 1px solid #1c2630;
@@ -295,7 +303,7 @@ a.info-item:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* تثبيت 3 أعمدة بالضبط زي ما تحب */
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     padding: 10px 0;
 }
@@ -315,7 +323,6 @@ a.info-item:hover {
     display: none;
 }
 
-/* ⚡ تظبيط الصورة للحفاظ على أبعادها دون أي تشويه أو تمطيط ⚡ */
 .project-img-wrapper {
     width: 100%;
     background: #0a0e11;
@@ -329,7 +336,7 @@ a.info-item:hover {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: contain; /* إظهار الصورة بالكامل دون قص */
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
@@ -429,6 +436,7 @@ a.info-item:hover {
     transform: translateY(0);
 }
 
+/* ⚡ التجاوب مع الشاشات ⚡ */
 @media (max-width: 992px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
